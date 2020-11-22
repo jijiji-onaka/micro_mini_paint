@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   error_check.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tjinichi <tjinichi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tjinichi <tjinichi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 15:03:37 by tjinichi          #+#    #+#             */
-/*   Updated: 2020/11/17 16:23:27 by tjinichi         ###   ########.fr       */
+/*   Updated: 2020/11/22 17:57:50 by tjinichi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int				error_return(char *str)
 
 int				zone_info_OutOfRange(t_zone *zone_info)
 {
-	return ((zone_info->width > 0 && zone_info->height <= 300) || \
+	return ((zone_info->width > 0 && zone_info->height <= 300) && \
 		(zone_info->height > 0 && zone_info->height <= 300));
 }
 
